@@ -1,0 +1,15 @@
+{
+    "name": "planet-wiki",
+    "version": "1.0.0",
+    "description": "A simple wiki for planets in our solar system",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.18.2"
+    }
+  }
+  

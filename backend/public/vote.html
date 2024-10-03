@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote for Your Favorite Planet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vote for Your Favorite Planet</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="vote.html">Vote for Your Favorite Planet</a> |
+            <a href="matchmaker.html">Find Your Perfect Planet Match</a>
+        </nav>
+    </header><br>
+    
+    <form id="voteForm">
+        <label for="planet">Select Your Favorite Planet:</label>
+        <select id="planet" name="planet">
+            <option value="Mercury">Mercury</option>
+            <option value="Venus">Venus</option>
+            <option value="Earth">Earth</option>
+            <option value="Mars">Mars</option>
+            <option value="Jupiter">Jupiter</option>
+            <option value="Saturn">Saturn</option>
+            <option value="Uranus">Uranus</option>
+            <option value="Neptune">Neptune</option>
+        </select><br>
+        <div id="vote-message">
+            <button type="submit" onclick="loadDoc()">Vote</button>
+          </div>
+</form><br>
+
+    <button id="viewResultsBtn">View Vote Results</button>
+    <div id="results">
+    </div>
+    
+    <script src="js/vote.js"></script>
+    <footer>
+    </footer>
+</body>
+</html>
+

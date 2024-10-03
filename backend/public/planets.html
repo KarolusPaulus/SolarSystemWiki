@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Solar System Planets</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="matchmaker.html">Find Your Planet Match</a> |
+            <a href="vote.html">Vote for Your Favorite Planet</a>
+        </nav>
+    </header><br>
+
+    <section>
+        <h2>Planetary Facts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Planet</th>
+                    <th>Diameter (km)</th>
+                    <th>Gravity (m/s^2)</th>
+                    <th>Distance from Sun (10^6 km)</th>
+                    <th>Mean Temperature (°C)</th>
+                    <th>Number of Moons</th>
+                    <th>Ring System?</th>
+                </tr>
+            </thead>
+            <tbody id="planet-data">
+            </tbody>
+        </table>
+    </section>
+    <script src="js/planets.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Solar System!</h1><br>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="vote.html">Vote for Your Favorite Planet</a> |
+            <a href="matchmaker.html">Find Your Perfect Planet Match</a>
+        </nav>
+    </header><br>
+
+    <main>
+        <div id="space">
+            <img id="planet-mercury" src="assets/mercury.png" alt="Mercury" class="planet" />
+            <img id="planet-venus" src="assets/venus.png" alt="Venus" class="planet" />
+            <img id="planet-earth" src="assets/earth.png" alt="Earth" class="planet" />
+            <img id="planet-mars" src="assets/mars.png" alt="Mars" class="planet" />
+            <img id="planet-jupiter" src="assets/jupiter.png" alt="Jupiter" class="planet" />
+            <img id="planet-saturn" src="assets/saturn.png" alt="Saturn" class="planet" />
+            <img id="planet-uranus" src="assets/uranus.png" alt="Uranus" class="planet" />
+            <img id="planet-neptune" src="assets/neptune.png" alt="Neptune" class="planet" />
+        </div>
+    </main>
+
+    <section id="planet-info" style="display: none;">
+        <h2 id="planet-name"></h2>
+        <p id="planet-description"></p>
+        <a href="planets.html">Read more details</a>
+        <button id="close-info">Close</button>
+    </section>
+    
+    <footer>
+        <h2>Check out our sources!</h2>
+    </footer>
+    <script src="js/planets.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+{
+    "bodies": [
+        {
+            "isPlanet": true,
+            "planetName": "Mercury",
+            "Diameter (km)": 4879,
+            "Gravity (m/s^2)": 3.7,
+            "Distance from Sun (10^6 km)": 57.9,
+            "Mean Temperature (°C)": 167,
+            "Number of Moons": null,
+            "Ring System?": "Yes"
+        },
+        {
+            "isPlanet": true,
+            "planetName": "Venus",
+            "Diameter (km)": 12.104,
+            "Gravity (m/s^2)": 8.9,
+            "Distance from Sun (10^6 km)": 108.2,
+            "Mean Temperature (°C)": 464,
+            "Number of Moons": null,
+            "Ring System?": "No"
+        },
+        {
+            "isPlanet": true,
+            "planetName": "Earth",
+            "Diameter (km)": 12.756,
+            "Gravity (m/s^2)": 9.8,
+            "Distance from Sun (10^6 km)": 149.6,
+            "Mean Temperature (°C)": 15,
+            "Number of Moons": 1,
+            "Ring System?": "Yes"
+        },
+        {
+            "isPlanet": true,
+            "planetName": "Mars",
+            "Diameter (km)": 6792,
+            "Gravity (m/s^2)": 3.7,
+            "Distance from Sun (10^6 km)": 228.0,
+            "Mean Temperature (°C)": -65,
+            "Number of Moons": 2,
+            "Ring System?": "No"
+        },
+        {
+            "isPlanet": true,
+            "planetName": "Jupiter",
+            "Diameter (km)": 142.984,
+            "Gravity (m/s^2)": 23.1,
+            "Distance from Sun (10^6 km)": 778.5,
+            "Mean Temperature (°C)": -110,
+            "Number of Moons": 95,
+            "Ring System?": "Yes"
+        },
+        {
+            "isPlanet": true,
+            "planetName": "Saturn",
+            "Diameter (km)": 120.536,
+            "Gravity (m/s^2)": 9.0,
+            "Distance from Sun (10^6 km)": 	1432.0,
+            "Mean Temperature (°C)": -140,
+            "Number of Moons": 146,
+            "Ring System?": "Yes"
+        },
+        {
+            "isPlanet": true,
+            "planetName": "Uranus",
+            "Diameter (km)": 51.118,
+            "Gravity (m/s^2)": 8.7,
+            "Distance from Sun (10^6 km)": 2867.0,
+            "Mean Temperature (°C)": -195,
+            "Number of Moons": 28,
+            "Ring System?": "Yes"
+        },
+        {
+            "isPlanet": true,
+            "planetName": "Neptune",
+            "Diameter (km)": 49.528,
+            "Gravity (m/s^2)": 11.0,
+            "Distance from Sun (10^6 km)": 4515.0,
+            "Mean Temperature (°C)": -200,
+            "Number of Moons": 16,
+            "Ring System?": "Yes"
+        }
+    ]
+}

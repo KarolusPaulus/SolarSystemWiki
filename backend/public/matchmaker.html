@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Match Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Find Your Perfect Planet Match</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="vote.html">Vote for Your Favorite Planet</a> |
+            <a href="matchmaker.html">Find Your Perfect Planet Match</a>
+        </nav>
+    </header><br>
+
+    <section>
+        <form id="quiz">
+            <!--<label for="quiz-name">Your Name:</label>
+            <input type="text" id="quiz-name" required />-->
+
+            <p>1. What kind of weather do you prefer?</p>
+            <div class="question">
+                <label>
+                    <input type="radio" name="weather" value="sunny" required>
+                    <img src="assets/sunny.jpg" alt="Sunny" title="Sunny">
+                </label>
+                <label>
+                    <input type="radio" name="weather" value="snowy">
+                    <img src="assets/cold.jpg" alt="Snowy" title="Snowy">
+                </label>
+                <label>
+                    <input type="radio" name="weather" value="rainy">
+                    <img src="assets/rainy.jpg" alt="Rainy" title="Rainy">
+                </label>
+                <label>
+                    <input type="radio" name="weather" value="cloudy">
+                    <img src="assets/cloudy.jpg" alt="Cloudy" title="Cloudy">
+                </label>
+            </div>
+            <p>2. What kind of alcoholic drink do you usually go for?</p>
+            <div class="question">
+            <label>
+                <input type="radio" name="drinks" value="shots" required>
+                <img src="assets/shots.jpg" alt="Shots" title="Shots">
+            </label>
+            <label>
+                <input type="radio" name="drinks" value="liquor">
+                <img src="assets/liquor.jpg" alt="Liquor" title="Liquor">
+            </label>
+            <label>
+                <input type="radio" name="drinks" value="wine">
+                <img src="assets/wine.jpg" alt="Wine" title="Wine">
+            </label>
+            <label>
+                <input type="radio" name="drinks" value="lights">
+                <img src="assets/lights.jpg" alt="Lights" title="Lights">
+            </label>
+        </div>
+        
+            <p>3. There's a strom outside. What do you do?</p>
+        <div class="question">
+        </div>
+            <p>4. What types of colors do you enjoy the most?</p>
+        <div class="question">
+            
+        </div>
+            <p>5. ?</p>
+        <div class="question">
+
+        </div>
+            <p>6. ?</p>
+        <div class="question">
+            
+        </div>
+            <button type="submit">Find My Perfect Match</button>
+        </form>
+
+        <p id="match-result"></p>
+        <img id="loading-gif" src="assets/heart.gif" alt="Matching..." style="display: none;" class="gif">
+    </section>
+
+    <script src="js/matchmaker.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+    "bodies": [
+    {
+      "name": "Mercury",
+      "description": "Mercury is the smallest planet in the Solar System. It’s classified as a terrestrial planet which means it’s primarily composed of silicate, rocks and metals. As a result of countless asteroids and other space rocks collisions, Mercury is heavily cratered. Mercury’s temperature can vary from -170 celsius to +420 celsius due to its long days that last approximately 88 Earth days."
+    },
+    {
+      "name": "Venus",
+      "description": "Venus has the densest atmosphere out of all the terrestrial planets in the Solar System. Even though Venus is the second closest to the Sun, it’s by far the warmest planet at +464 celsius at the hottest. This is due to it being mostly composed of carbon dioxide which is a greenhouse gas. Venus has active volcanoes that release internal heat, resulting in resurfacing rather than plate tectonics which means that instead of the planet's surface being broken into shifting plates like on Earth, it undergoes periodic, large-scale volcanic resurfacing events."
+    },
+    {
+      "name": "Earth",
+      "description": "Earth, also known as Terra, Tellus, Gaia, is the only planet known to currently harbor life and the planet you’re on right now! Earth’s ability to maintain environments hospitable to life is enabled by it being an ocean world and having an atmosphere and a magnetic field protecting it from solar winds and keeping it warm. Its crust is approximately 70% water while the remaining 30% is composed of continental landmasses with a variety of different environments."
+    },
+    {
+      "name": "Mars",
+      "description": "Mars is the second smallest planet in the Solar System. Its orange-red color manifests because it’s covered in iron oxide dust. Mars has two natural satellites, Phobos and Deimos. While the northern parts of Mars are relatively flat, the southern parts have cratered highlands. There are notable temperature swings within a year that vary from -78 celsius to +5.7 celsius which are similar to Earth’s seasons, as they both have significant axial tilts."
+    },
+    {
+      "name": "Jupiter",
+      "description": "Jupiter is the largest planet in the Solar System with an equatorial diameter of nearly 143 kilometers. It’s the third brightest natural object in the Earth’s night sky only surpassed by the Moon and Venus. Jupiter was the first planet to form in the Solar System and its presence affected much of the formation history of the other planets. Hydrogen accounts for 90% of Jupiter’s volume, followed by helium. Because of its strong gravitational pull, Jupiter is surrounded by a faint system of planetary rings that extend outward from the planet, composed mainly of dust and small particles."
+    },
+    {
+      "name": "Saturn",
+      "description": "Saturn is the second largest planet in the Solar System and is most commonly recognized for its complex and highly visible ring system. These rings consist of small particles that are largely made of water ice."
+    },
+    {
+      "name": "Uranus",
+      "description": "Uranus, widely known for its hilarious name, is an ice giant which means it’s largely composed of elements heavier than hydrogen and helium, such as oxygen, carbon and sulfur."
+    },
+    {
+      "name": "Neptune",
+      "description": "Neptune is the coldest planet in the Solar System and furthest from the Sun."
+    }
+  ]
+}
