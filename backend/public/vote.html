@@ -8,14 +8,16 @@
 </head>
 <body>
     <header>
-        <h1>Vote for Your Favorite Planet</h1>
+        <h1>Solar System Wiki</h1><br>
         <nav>
             <a href="index.html">Home</a> |
             <a href="vote.html">Vote for Your Favorite Planet</a> |
             <a href="matchmaker.html">Find Your Perfect Planet Match</a>
         </nav>
     </header><br>
-    
+
+    <main>
+        <h2>Vote For Your Favorite Planet</h2>
     <form id="voteForm">
         <label for="planet">Select Your Favorite Planet:</label>
         <select id="planet" name="planet">
@@ -30,16 +32,14 @@
         </select><br>
         <div id="vote-message">
             <button type="submit" onclick="loadDoc()">Vote</button>
-          </div>
+          </div><div id="results" class="fade-in"></div>
 </form><br>
+</main>
 
-    <button id="viewResultsBtn">View Vote Results</button>
-    <div id="results">
-    </div>
-    
+<footer>
+    <h2>Check out our sources!</h2>
+</footer>
     <script src="js/vote.js"></script>
-    <footer>
-    </footer>
 </body>
 </html>
 

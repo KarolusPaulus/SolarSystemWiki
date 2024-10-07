@@ -1,9 +1,8 @@
-document.getElementById('quiz-form').addEventListener('submit', function(e) {
+document.getElementById('quiz').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    //const name = document.getElementById('quiz-name').value;
-    const weather = document.getElementById('weather').value;
-    const storms = document.getElementById('drinks').value;
+    const weather = document.querySelector('input[name="weather"]:checked').value;
+    const drinks = document.querySelector('input[name="drinks"]:checked').value;
 
     const matchResult = document.getElementById('match-result');
     const loadingGif = document.getElementById('loading-gif');
@@ -23,20 +22,48 @@ document.getElementById('quiz-form').addEventListener('submit', function(e) {
             Neptune: 0
         };
 
-        if (climate === 'sunny') {
+        if (weather === 'sunny') {
             planetScores.Mercury += 20;
-            planetScores.Venus += 20;
-        } else if (climate === 'cold') {
+            planetScores.Venus += 15;
+        } else if (weather === 'snowy') {
             planetScores.Mars += 20;
-            planetScores.Uranus += 20;
-            planetScores.Neptune += 20;
-        } else {
+            planetScores.Uranus += 15;
+            planetScores.Neptune += 15;
+        } else if (weather === 'rainy') {
             planetScores.Earth += 20;
+            planetScores.Venus += 10;
+        } else if (weather === 'cloudy') {
+            planetScores.Venus += 20;
+            planetScores.Earth += 10;
+        }
+        
+        if (drinks === 'shots') {
+            planetScores.Mars += 20;
+            planetScores.Jupiter += 15;
+        } else if (drinks === 'liquor') {
+            planetScores.Venus += 20;
+            planetScores.Earth += 15;
+        } else if (drinks === 'wine') {
+            planetScores.Earth += 20;
+            planetScores.Venus += 15;
+        } else if (drinks === 'lights') {
+            planetScores.Uranus += 20;
+            planetScores.Neptune += 15;
         }
 
         const bestMatch = Object.keys(planetScores).reduce((a, b) => planetScores[a] > planetScores[b] ? a : b);
        
-        loadingGif.style.display = 'none';
-        matchResult.textContent = `Your perfect planet match is ${bestMatch}!`;
+        fetch('/planet-matchmessage.json')
+            .then(response => response.json())
+            .then(data => {
+                const planetMessage = data.bodies.find(body => body.name === bestMatch).message;
+                loadingGif.style.display = 'none';
+                matchResult.textContent = `Your perfect match is ${bestMatch}! ${planetMessage}`;
+            })
+            .catch(error => {
+                console.error(error);
+                loadingGif.style.display = 'none';
+                matchResult.textContent = 'Error fetching match message.';
+            });
     }, 3000);
 });

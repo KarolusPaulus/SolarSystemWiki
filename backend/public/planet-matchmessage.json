@@ -1,0 +1,36 @@
+{
+    "bodies": [
+    {
+      "name": "Mercury",
+      "message": "..."
+    },
+    {
+      "name": "Venus",
+      "message": "Let me guess, you have a long track list of toxic, explosive exes. You’re probably pretty crazy yourself but that doesn’t mean you should have no self preservation."
+    },
+    {
+      "name": "Earth",
+      "message": "..."
+    },
+    {
+      "name": "Mars",
+      "message": "..."
+    },
+    {
+      "name": "Jupiter",
+      "message": "Damn, you like ‘em huge! There’s nothing wrong with that. Jupiter might be a lot to handle but it’s worth the effort!"
+    },
+    {
+      "name": "Saturn",
+      "message": "Everyone likes someone who is sociable but be careful…Saturn has a lot of space rocks orbiting it. Don’t get lost and become just another rock."
+    },
+    {
+      "name": "Uranus",
+      "message": "..."
+    },
+    {
+      "name": "Neptune",
+      "message": "Cool and calm. Not too clingy. You like your partner to keep their distance, just don’t drift too far away."
+    }
+  ]
+}

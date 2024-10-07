@@ -1,13 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     const voteForm = document.getElementById('voteForm');
-    const viewResultsBtn = document.getElementById('viewResultsBtn');
     const resultsDiv = document.getElementById('results');
+    const voteMessageDiv = document.getElementById('vote-message');
 
     function loadDoc() {
         const xhttp = new XMLHttpRequest();
-        xhttp.onload = function() {
+        /*xhttp.onload = function() {
             document.getElementById("vote-message").innerHTML = this.responseText;
-        }
+        }*/
+            xhttp.onload = function() {
+                voteMessageDiv.innerHTML = this.responseText;
+                voteMessageDiv.classList.add('zoom-in');
+                fetchResults();
+            }
         xhttp.open("GET", "votemessage.txt", true);
         xhttp.send();
     }
@@ -26,10 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(() => {
             loadDoc();
         })
-        .catch(err => console.error(error));
+        .catch(error => console.error(error));
     });
-    
-    viewResultsBtn.addEventListener('click', () => {
+
+    function fetchResults() {
         fetch('/votes')
             .then(response => response.json())
             .then(voteData => {
@@ -40,7 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     planetResult.textContent = `${vote.planet_name}: ${vote.votes} votes`;
                     resultsDiv.appendChild(planetResult);
                 });
+
+                resultsDiv.classList.add('show');
             })
-            .catch(err => console.error(error));
-    });
+            .catch(error => console.error(error));
+    }
 });
