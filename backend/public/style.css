@@ -1,4 +1,4 @@
-body {
+.index-page {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -14,19 +14,36 @@ body {
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url('assets/space2.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
 header {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #000;
     color: #ffffff;
     padding: 20px 30px;
     position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
 }
 
 .header-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
 }
 
 h1 {
@@ -34,10 +51,23 @@ h1 {
     font-size: 2.5rem;
     margin: 0;
     letter-spacing: 2px;
+    text-align: left;
+}
+
+a {
+    color: #00b0ff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffa550;
 }
 
 nav {
     margin-top: 10px;
+    text-align: left;
 }
 
 nav a {
@@ -50,7 +80,7 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    color: #fff;
+    color: #ffa550;
 }
 
 @media (min-width: 768px) {
@@ -65,7 +95,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.8);;
+    background-color: #000;
     padding: 40px;
     color: #fff;
     text-align: left;
@@ -74,7 +104,19 @@ footer {
 
 main {
     flex-grow: 1;
-    margin-top: 50px;
+    padding: 0;
+    width: 100%;
+}
+
+main.black-box {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    width: 70%;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+    color: #fff;
+    margin: 0 auto;
 }
 
 #space {
@@ -181,8 +223,8 @@ table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #1a1a1a;
-    color: #fff;
+    background-color: #000;
+    color: #0080cc;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     overflow: hidden;
@@ -190,23 +232,14 @@ table {
 
 th, td {
     padding: 15px;
-    border: 1px solid #555;
+    border: 2px solid #0080cc;
     text-align: left;
 }
 
 th {
-    background-color: #333;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+    color: #000;
+    background: #0080cc;
     text-transform: uppercase;
-}
-
-td {
-    background-color: #222;
-}
-
-tr:nth-child(even) td {
-    background-color: #2a2a2a;
 }
 
 td:first-child {
@@ -282,22 +315,6 @@ form label {
     color: #00b0ff;
 }
 
-#viewResultsBtn {
-    background-color: #00b0ff;
-    border: none;
-    color: white;
-    padding: 12px 24px;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-}
-
-#viewResultsBtn:hover {
-    background-color: #0080cc;
-}
-
 #vote-message {
     margin: 20px 0;
     text-align: center;
@@ -309,7 +326,7 @@ form label {
     color: #fff;
     border-radius: 5px;
     width: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 0 20px;
     text-align: center;
     font-size: 18px;
@@ -323,6 +340,10 @@ form label {
 }
 
 #vote-message {
+    color: #00b0ff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
     display: inline-block;
     transition: transform 0.6s ease, opacity 0.6s ease;
     
