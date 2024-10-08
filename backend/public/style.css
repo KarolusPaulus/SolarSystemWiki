@@ -1,19 +1,7 @@
-.index-page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: Arial, sans-serif;
-    background-image: url('assets/space.png');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-}
 
+/*
+    For all pages
+*/
 body {
     display: flex;
     flex-direction: column;
@@ -119,6 +107,25 @@ main.black-box {
     margin: 0 auto;
 }
 
+/*
+    Index.html
+*/
+.index-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-image: url('assets/space.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
 #space {
     display: flex;
     flex-wrap: wrap;
@@ -213,12 +220,65 @@ main.black-box {
     background-color: #0080cc;
 }
 
-.gif {
-    width: 100px;
+/*
+    Matchmaker.html
+*/
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100px;
+    margin-top: 20px;
+}
+
+.loading-gif {
+    width: 60px;
+    height: 60px;
     object-fit: contain;
 }
 
+.question {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.question label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question img {
+    width: 300px;
+    height: auto;
+    border: 2px solid transparent;
+}
+
+.question input[type="radio"] {
+    display: none;
+}
+
+.question input[type="radio"]:checked + img {
+    border-color: #00b0ff;
+}
+
+#quiz button {
+    background-color: #00b0ff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/*
+    Planets.html (Planetary facts sheet)
+*/
 table {
     width: 80%;
     margin: 20px auto;
@@ -247,25 +307,9 @@ td:first-child {
     color: #00b0ff;
 }
 
-.question {
-    display: flex;
-    gap: 10px;
-}
-
-.question label {
-    cursor: pointer;
-}
-
-.question img {
-    width: 100px;
-    height: auto;
-    border: 2px solid transparent;
-}
-
-.question input[type="radio"]:checked + img {
-    border-color: #00b0ff;
-}
-
+/*
+    Vote.html
+*/
 select {
     background-color: #000;
     color: #fff;

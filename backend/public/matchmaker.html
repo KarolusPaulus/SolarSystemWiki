@@ -30,6 +30,8 @@
                     <input type="radio" name="weather" value="snowy">
                     <img src="assets/cold.jpg" alt="Snowy" title="Snowy">
                 </label>
+            </div>
+            <div class="question">
                 <label>
                     <input type="radio" name="weather" value="rainy">
                     <img src="assets/rainy.jpg" alt="Rainy" title="Rainy">
@@ -49,6 +51,8 @@
                 <input type="radio" name="drinks" value="liquor">
                 <img src="assets/liquor.jpg" alt="Liquor" title="Liquor">
             </label>
+        </div>
+        <div class="question">
             <label>
                 <input type="radio" name="drinks" value="wine">
                 <img src="assets/wine.jpg" alt="Wine" title="Wine">
@@ -58,27 +62,97 @@
                 <img src="assets/lights.jpg" alt="Lights" title="Lights">
             </label>
         </div>
-        <!--
             <p>3. There's a strom outside. What do you do?</p>
         <div class="question">
+            <label>
+                <input type="radio" name="storm" value="angry" required>
+                <img src="assets/angry.jpg" alt="Angry" title="Angry">
+            </label>
+            <label>
+                <input type="radio" name="storm" value="relax">
+                <img src="assets/relax.jpg" alt="Relax" title="Relax">
+            </label>
+        </div>
+        <div class="question">
+            <label>
+                <input type="radio" name="storm" value="outside">
+                <img src="assets/outside.jpg" alt="Outside" title="Outside">
+            </label>
+            <label>
+                <input type="radio" name="storm" value="idc">
+                <img src="assets/idc.jpg" alt="Idc" title="Idc">
+            </label>
         </div>
             <p>4. What types of colors do you enjoy the most?</p>
         <div class="question">
-            
+            <label>
+                <input type="radio" name="colors" value="neons" required>
+                <img src="assets/neons.jpg" alt="Neons" title="Neons">
+            </label>
+            <label>
+                <input type="radio" name="colors" value="pastels">
+                <img src="assets/pastels.jpg" alt="Pastels" title="Pastels">
+            </label>
+        </div>
+        <div class="question">
+            <label>
+                <input type="radio" name="colors" value="muted">
+                <img src="assets/muted.jpg" alt="Muted" title="Muted">
+            </label>
+            <label>
+                <input type="radio" name="colors" value="grayscale">
+                <img src="assets/grayscale.jpg" alt="Grayscale" title="Grayscale">
+            </label>
         </div>
             <p>5. What's your ideal first date?</p>
         <div class="question">
-
+            <label>
+                <input type="radio" name="dates" value="stars" required>
+                <img src="assets/stars.jpg" alt="Stars" title="Stars">
+            </label>
+            <label>
+                <input type="radio" name="dates" value="art">
+                <img src="assets/art.jpg" alt="Art" title="Art">
+            </label>
         </div>
-            <p>6. ?</p>
         <div class="question">
-            -->
+            <label>
+                <input type="radio" name="dates" value="outdoors">
+                <img src="assets/outdoors.jpg" alt="Outdoors" title="Outdoors">
+            </label>
+            <label>
+                <input type="radio" name="dates" value="cozy">
+                <img src="assets/cozy.jpg" alt="Cozy" title="Cozy">
+            </label>
         </div>
-            <button type="submit">Find My Perfect Match</button>
+            <p>6. What Kind of Music Do You Prefer?</p>
+        <div class="question">
+            <label>
+                <input type="radio" name="music" value="pop" required>
+                <img src="assets/pop.jpg" alt="Pop" title="Pop">
+            </label>
+            <label>
+                <input type="radio" name="music" value="rock">
+                <img src="assets/rock.jpg" alt="Rock" title="Rock">
+            </label>
+        </div>
+        <div class="question">
+            <label>
+                <input type="radio" name="music" value="classical">
+                <img src="assets/classical.jpg" alt="Classical" title="Classical">
+            </label>
+            <label>
+                <input type="radio" name="music" value="electro">
+                <img src="assets/electro.jpg" alt="Electro" title="Electro">
+            </label>
+        </div>
+            <button id="findMatch" type="submit">Find My Perfect Match</button>
         </form>
 
         <p id="match-result"></p>
-        <img id="loading-gif" src="assets/heart.gif" alt="Matching..." style="display: none;" class="gif">
+        <div class="gif-container">
+            <img id="loading-gif" class="loading-gif" src="assets/heart.gif" alt="Matching..." style="display: none;">
+        </div>
     </section>
     </main>
 
