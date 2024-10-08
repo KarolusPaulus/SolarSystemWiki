@@ -69,7 +69,7 @@ nav a:hover {
     text-decoration: underline;
     color: #ffa550;
 }
-
+/*
 @media (min-width: 768px) {
     .header-container {
         flex-direction: row;
@@ -80,7 +80,7 @@ nav a:hover {
         font-size: 3rem;
     }
 }
-
+*/
 /*
     For mobile (VERY experimental)
 */
@@ -127,6 +127,12 @@ nav a:hover {
 
     th, td {
         font-size: 14px;
+    }
+
+    .question img {
+        width: 100px;
+        height: auto;
+        border: 2px solid transparent;
     }
 
     .question {
