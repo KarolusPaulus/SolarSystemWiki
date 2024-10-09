@@ -1,3 +1,4 @@
+ 
     function Quiz(weather, drinks, storm, colors, dates, music) {
 
         this.weather = weather;
@@ -114,6 +115,17 @@
     };
 }
 
+const planetGifs = {
+    Mercury: 'assets/mercury.gif',
+    Venus: 'assets/venus.gif',
+    Earth: 'assets/earth.gif',
+    Mars: 'assets/mars.gif',
+    Jupiter: 'assets/jupiter.gif',
+    Saturn: 'assets/saturn.gif',
+    Uranus: 'assets/uranus.gif',
+    Neptune: 'assets/neptune.gif'
+};
+
 document.getElementById('quiz').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -126,9 +138,13 @@ document.getElementById('quiz').addEventListener('submit', function(e) {
         document.querySelector('input[name="music"]:checked').value
     );
 
+    const submitButton = document.getElementById('find-match');
+    submitButton.style.display = 'none';
+
     const matchResult = document.getElementById('match-result');
     const loadingGif = document.getElementById('loading-gif');
-   
+    matchResult.classList.remove('show');
+    
     loadingGif.style.display = 'block';
     matchResult.textContent = '';
 
@@ -142,13 +158,19 @@ document.getElementById('quiz').addEventListener('submit', function(e) {
             .then(data => {
                 const planetMessage = data.bodies.find(body => body.name === bestMatch).message;
                 loadingGif.style.display = 'none';
-                matchResult.textContent = `Your perfect match is ${bestMatch}! ${planetMessage}`;
+                matchResult.innerHTML = `
+                <h3>Your perfect match is ${bestMatch}!</h3>
+                <img src="assets/planet-gif.gif" alt="${bestMatch} GIF" style="display:block; margin: 0 auto;">
+                <p>${planetMessage}</p>
+                `;
+
+                matchResult.classList.add('show');
             })
             .catch(error => {
                 console.error(error);
                 loadingGif.style.display = 'none';
                 matchResult.textContent = 'Error fetching match message.';
-                alert('Oops! There was an error fetching your perfect match');
+                alert('Oops! There was an error fetching your perfect match D:');
             });
     }, 3000);
 });
