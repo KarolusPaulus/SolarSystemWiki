@@ -23,102 +23,91 @@
             planetScores.Mercury += 20;
             planetScores.Venus += 15;
         } else if (this.weather === 'snowy') {
-            planetScores.Mars += 20;
+            planetScores.Neptune += 20;
             planetScores.Uranus += 15;
-            planetScores.Neptune += 15;
+            planetScores.Mars += 10;
         } else if (this.weather === 'rainy') {
             planetScores.Earth += 20;
-            planetScores.Venus += 10;
-            planetScores.Saturn += 10;
+            planetScores.Venus += 15;
             planetScores.Jupiter += 10;
         } else if (this.weather === 'cloudy') {
             planetScores.Venus += 20;
-            planetScores.Saturn += 15;
-            planetScores.Earth += 10;
+            planetScores.Jupiter += 15;
         }
         
         if (this.drinks === 'shots') {
             planetScores.Mercury += 20;
-            planetScores.Jupiter += 15;
+            planetScores.Jupiter += 10;
         } else if (this.drinks === 'liquor') {
             planetScores.Venus += 20;
             planetScores.Mars += 15;
         } else if (this.drinks === 'wine') {
             planetScores.Earth += 20;
-            planetScores.Saturn += 20;
-            planetScores.Venus += 10;
+            planetScores.Saturn += 15;
         } else if (this.drinks === 'lights') {
-            planetScores.Earth += 10;
             planetScores.Uranus += 20;
             planetScores.Neptune += 15;
         }
 
         if (this.storm === 'angry') {
             planetScores.Mercury += 20;
-            planetScores.Mars += 10;
+            planetScores.Mars += 15;
         } else if (this.storm === 'relax') {
             planetScores.Venus += 20;
-            planetScores.Saturn += 20;
-            planetScores.Mars += 15;
+            planetScores.Saturn += 15;
         } else if (this.storm === 'outside') {
             planetScores.Jupiter += 20;
-            planetScores.Earth += 15;
-            planetScores.Venus += 10;
         } else if (this.storm === 'idc') {
-            planetScores.Earth += 10;
-            planetScores.Saturn += 15;
-            planetScores.Uranus += 15;
             planetScores.Neptune += 20;
+            planetScores.Earth += 10;
         }
 
         if (this.colors === 'neons') {
-            planetScores.Jupiter += 20;
-            planetScores.Neptune += 20;
-            planetScores.Venus += 10;
-        } else if (this.colors === 'pastels') {
-            planetScores.Venus += 20;
-            planetScores.Earth += 15;
-            planetScores.Saturn += 10;
             planetScores.Uranus += 20;
+            planetScores.Earth += 15;
+            planetScores.Neptune += 10;
+        } else if (this.colors === 'pastels') {
+            planetScores.Uranus += 20;
+            planetScores.Neptune += 10;
         } else if (this.colors === 'muted') {
-            planetScores.Saturn += 20;
-            planetScores.Earth += 10;
-            planetScores.Mars += 15;
+            planetScores.Mars += 20;
+            planetScores.Venus += 15;
             planetScores.Mercury += 10;
         } else if (this.colors === 'grayscale') {
             planetScores.Mercury += 20;
         }
 
         if (this.dates === 'stars') {
-            planetScores.Earth += 15;
             planetScores.Venus += 20;
-            planetScores.Saturn += 15;
+            planetScores.Jupiter += 15;
+            planetScores.Earth += 10;
         } else if (this.dates === 'art') {
             planetScores.Jupiter += 20;
-            planetScores.Mars += 10;
-            planetScores.Neptune += 15;
-        } else if (this.dates === 'outdoors') {
-            planetScores.Earth += 10;
             planetScores.Mars += 15;
-            planetScores.Uranus += 15;
+            planetScores.Saturn += 10;
+        } else if (this.dates === 'outdoors') {
+            planetScores.Saturn += 20;
         } else if (this.dates === 'cozy') {
-            planetScores.Mercury += 20;
-            planetScores.Venus += 10;
+            planetScores.Neptune += 20;
+            planetScores.Uranus += 15;
+            planetScores.Mercury += 10;
         }
 
         if (this.music === 'pop') {
             planetScores.Venus += 20;
+            planetScores.Earth += 15;
+            planetScores.Saturn += 10;
         } else if (this.music === 'rock') {
             planetScores.Mars += 20;
             planetScores.Earth += 15;
         } else if (this.music === 'classical') {
-            planetScores.Jupiter += 20;
-            planetScores.Earth += 10;
-            planetScores.Saturn += 15;
+            planetScores.Saturn += 20;
+            planetScores.Mercury += 15;
+            planetScores.Uranus += 10;
         } else if (this.music === 'electro') {
-            planetScores.Mercury += 20;
-            planetScores.Uranus += 15;
-            planetScores.Neptune += 15;
+            planetScores.Jupiter += 20;
+            planetScores.Saturn += 15;
+            planetScores.Neptune += 10;
         }
 
         return planetScores;

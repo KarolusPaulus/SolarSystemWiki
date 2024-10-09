@@ -2,11 +2,11 @@
     "bodies": [
     {
       "name": "Mercury",
-      "description": "Mercury is the smallest planet in the Solar System. It’s classified as a terrestrial planet which means it’s primarily composed of silicate, rocks and metals. As a result of countless asteroids and other space rocks collisions, Mercury is heavily cratered. Mercury’s temperature can vary from -170 celsius to +420 celsius due to its long days that last approximately 88 Earth days."
+      "description": "Mercury is the smallest planet in the Solar System. It’s classified as a terrestrial planet which means it’s primarily composed of silicate, rocks and metals. As a result of countless asteroids and other space rocks collisions, Mercury is heavily cratered. Mercury’s temperature can vary from -170°C to +420°C due to its long days that last approximately 88 Earth days."
     },
     {
       "name": "Venus",
-      "description": "Venus has the densest atmosphere out of all the terrestrial planets in the Solar System. Even though Venus is the second closest to the Sun, it’s by far the warmest planet at +464 celsius at the hottest. This is due to it being mostly composed of carbon dioxide which is a greenhouse gas. Venus has active volcanoes that release internal heat, resulting in resurfacing rather than plate tectonics which means that instead of the planet's surface being broken into shifting plates like on Earth, it undergoes periodic, large-scale volcanic resurfacing events."
+      "description": "Venus has the densest atmosphere out of all the terrestrial planets in the Solar System. Even though Venus is the second closest to the Sun, it’s by far the warmest planet at +464°C at the hottest. This is due to it being mostly composed of carbon dioxide which is a greenhouse gas. Venus has active volcanoes that release internal heat, resulting in resurfacing rather than plate tectonics which means that instead of the planet's surface being broken into shifting plates like on Earth, it undergoes periodic, large-scale volcanic resurfacing events."
     },
     {
       "name": "Earth",
@@ -14,7 +14,7 @@
     },
     {
       "name": "Mars",
-      "description": "Mars is the second smallest planet in the Solar System. Its orange-red color manifests because it’s covered in iron oxide dust. Mars has two natural satellites, Phobos and Deimos. While the northern parts of Mars are relatively flat, the southern parts have cratered highlands. There are notable temperature swings within a year that vary from -78 celsius to +5.7 celsius which are similar to Earth’s seasons, as they both have significant axial tilts."
+      "description": "Mars is the second smallest planet in the Solar System. Its orange-red color manifests because it’s covered in iron oxide dust. Mars has two natural satellites, Phobos and Deimos. While the northern parts of Mars are relatively flat, the southern parts have cratered highlands. There are notable temperature swings within a year that vary from -78°C to +5.7°C which are similar to Earth’s seasons, as they both have significant axial tilts."
     },
     {
       "name": "Jupiter",
@@ -22,15 +22,15 @@
     },
     {
       "name": "Saturn",
-      "description": "Saturn is the second largest planet in the Solar System and is most commonly recognized for its complex and highly visible ring system. These rings consist of small particles that are largely made of water ice."
+      "description": "Saturn is the second largest planet in the Solar System and is most commonly recognized for its complex and highly visible ring system. These rings are composed mainly of water ice particles, with smaller amounts of rock and dust. Saturn is a gas giant, primarily composed of hydrogen and helium, much like Jupiter. Despite its size, Saturn has a relatively low density. Saturn is also known for its numerous moons among which Titan stands out as the largest, with a thick atmosphere and surface lakes of methane and ethane."
     },
     {
       "name": "Uranus",
-      "description": "Uranus, widely known for its hilarious name, is an ice giant which means it’s largely composed of elements heavier than hydrogen and helium, such as oxygen, carbon and sulfur."
+      "description": "Uranus, widely known for its hilarious name, is an ice giant, largely composed of oxygen, carbon and sulfur. It’s unique among planets because it orbits the Sun on its side, with an axial tilt of over 90 degrees. This unusual tilt causes extreme seasonal variations, with each pole experiencing 42 years of continuous sunlight followed by 42 years of darkness. Its bluish color comes from the methane in its atmosphere, which absorbs red light and reflects blue. Uranus has a faint ring system and is surrounded by 28 moons, with Miranda, Ariel, Umbriel, Titania, and Oberon, being the most notable."
     },
     {
       "name": "Neptune",
-      "description": "Neptune is the coldest planet in the Solar System and furthest from the Sun."
+      "description": "Neptune is the farthest planet from the Sun and the coldest in the Solar System, with temperatures going as low as -200°C. It’s classified as an ice giant, like Uranus and is mostly composed of heavier elements and ices, such as water, ammonia, and methane. Neptune’s deep blue color is due to the presence of methane in its atmosphere. Despite its distance from the Sun, Neptune has the strongest winds in the Solar System, with speeds reaching up to 2,100 kilometers per hour. Neptune has a faint ring system and 16 moons, with Triton being the largest."
     }
   ]
 }

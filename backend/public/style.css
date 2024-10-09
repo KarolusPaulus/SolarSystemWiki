@@ -23,38 +23,51 @@ header {
     color: #ffffff;
     padding: 20px 15px;
     position: relative;
-    text-align: left;
+    text-align: center;
 }
 
 .header-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
 }
 
 h1 {
     font-family: 'Arial', sans-serif;
-    font-size: 2.2rem;
+    font-size: 40px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.h2 {
+    font-size: 30px;
     margin: 0;
     letter-spacing: 2px;
     text-align: left;
+    padding: 20px 30px;
 }
 
-a {
-    color: #00b0ff;
-    margin-right: 15px;
-    text-decoration: none;
+h3 {
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 20px 30px;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #ffa550;
+.p {
+    font-size: 20px;
+    margin: 0;
+    letter-spacing: 2px;
+    text-align: left;
+    padding: 0px 30px;
 }
 
 nav {
     margin-top: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 nav a {
@@ -69,18 +82,19 @@ nav a:hover {
     text-decoration: underline;
     color: #ffa550;
 }
-/*
-@media (min-width: 768px) {
-    .header-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
-    h1 {
-        font-size: 3rem;
-    }
+footer a {
+    color: #00b0ff;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
-*/
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffa550;
+}
+
 /*
     For mobile (VERY experimental)
 */
@@ -153,7 +167,7 @@ footer {
     background-color: #000;
     padding: 40px;
     color: #fff;
-    text-align: left;
+    text-align: center;
     margin-top: auto; 
 }
 
@@ -165,7 +179,7 @@ main {
 
 main.black-box {
     background-color: rgba(0, 0, 0, 0.75);
-    padding: 20px;
+    padding: 10px;
     width: 70%;
     max-width: 900px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -252,10 +266,10 @@ main.black-box {
 }
 
 #planet-info {
-    background-color: black;
+    background-color: #000;
     color: #fff;
-    border: 2px solid #fff;
-    padding: 20px;
+    border: 3px solid #00b0ff;
+    padding: 20px 30px;
     position: fixed;
     top: 20%;
     left: 50%;
@@ -263,8 +277,50 @@ main.black-box {
     width: 80%;
     max-width: 500px;
     z-index: 1000;
-    display: none;
     text-align: left;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+h2 #planet-name {
+    margin-bottom: 5px;
+}
+
+#planet-description {
+    margin-top: 0;
+}
+
+#planet-info.show {
+    display: block;
+    opacity: 1;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+}
+
+#planet-info.show {
+    animation: fadeIn 0.5s ease forwards;
 }
 
 #planet-info h2 {
@@ -275,16 +331,23 @@ main.black-box {
     margin-bottom: 15px;
 }
 
-#close-info {
+button, .info-button {
     background-color: #00b0ff;
     border: none;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 13px;
     cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 1.5;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-top: 15px;
 }
 
-#close-info:hover {
-    background-color: #0080cc;
+button:hover, .info-button:hover {
+    background-color: #ffa550;
 }
 
 /*
@@ -332,6 +395,7 @@ main.black-box {
     border-color: #00b0ff;
 }
 
+/*
 #quiz button {
     background-color: #00b0ff;
     border: none;
@@ -342,6 +406,7 @@ main.black-box {
     cursor: pointer;
     margin-top: 20px;
 }
+*/
 
 /*
     Planets.html (Planetary facts sheet)
@@ -404,6 +469,7 @@ option {
     font-size: 16px;
 }
 
+/*
 #voteForm button {
     background-color: #00b0ff;
     border: none;
@@ -418,6 +484,7 @@ option {
 #voteForm button:hover {
     background-color: #0080cc;
 }
+*/
 
 form label {
     font-size: 18px;
