@@ -2,12 +2,12 @@
 
 # HTML
 1/5:
-Basic HTML structure is present.<br>
+Basic HTML structure is present.
     **All HTML documents** have document type declarations **<//!DOCTYPE html>**
     and basic structure using **<//html>** and **<//body>**.
 
 2/5:
-HTML structure with clear content differentiation (headings, paragraphs, lists).<br>
+HTML structure with clear content differentiation (headings, paragraphs, lists).
     **All HTML documents** have consistent use of heading, paragraphs
     and line breaks. No lists have been added.
 
@@ -16,11 +16,11 @@ Use of forms, links, and media.
     **All HTML documents** have a header and a footer. The header has links to
     other pages on the site while the footer has external links to sources used
     for the making of the site and the information displayed on it.
-    The match maker quiz in matchmaker.html uses form to structure the questions
+    The match maker quiz in **matchmaker.html** uses form to structure the questions
     and answers. The anwers are all in image form and are displayed in place of text.
     After the user has filled out the form and pressed the submit button, a loading gif
     plays as the results are calculated.
-    The home page, index.html, uses still images as buttons and the background.
+    The home page, **index.html**, uses still images as buttons and the background.
 
 4/5:
 Tables are effectively used.
@@ -33,7 +33,7 @@ Consistent use of semantic HTML throughout, ensuring better structure and unders
     **<//header>**, **<//footer>**, **<//nav>**, **<//main>** and **<//section>**.
 
 
-CSS
+# CSS
 1/5:
 Basic CSS styling (colors, fonts).
     The **style.css** file contains use of different colors and fonts
@@ -63,7 +63,7 @@ Use of layouts for advanced user interfaces (arrays, float, flexbox, css grid)
 Styling demonstrates a strong grasp of layout principles, aesthetics, and user experience.
 
 
-JavaScript Basics
+# JavaScript Basics
 1/5:
 Simple interactions (like alerts on button click).
     The code includes ONE alert in **matchmaker.js** that pops up if there's
@@ -90,7 +90,7 @@ Consistent use of Object-Oriented JavaScript principles.
     Object-oriented principles are present in the use of constructors like **Quiz** in **matchmaker.js**.
 
 
-Asynchronous Operations
+# Asynchronous Operations
 1/5:
 Use of timers.
     A setTimeout function creates a delay for showing quiz results in **matchmaker.js**.
