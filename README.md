@@ -2,12 +2,12 @@
 
 **HTML**
 **1/5:**
-- Basic HTML structure is present.
+- Basic HTML structure is present.<br>
     **All HTML documents** have document type declarations **<//!DOCTYPE html>**
     and basic structure using **<//html>** and **<//body>**.
 
 **2/5:**
-- HTML structure with clear content differentiation (headings, paragraphs, lists).
+- HTML structure with clear content differentiation (headings, paragraphs, lists).<br>
     **All HTML documents** have consistent use of heading, paragraphs
     and line breaks. No lists have been added.
 
@@ -88,7 +88,7 @@
     and **vote.js**. Loops iterate through the planets to display information or votes.
 
 **5/5:**
-Consistent use of Object-Oriented JavaScript principles.
+- Consistent use of Object-Oriented JavaScript principles.
     Object-oriented principles are present in the use of constructors like **Quiz** in **matchmaker.js**.
 
 
