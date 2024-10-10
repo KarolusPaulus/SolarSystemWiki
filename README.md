@@ -88,7 +88,7 @@
     and **vote.js**. Loops iterate through the planets to display information or votes.
 
 **5/5:**
-- Consistent use of Object-Oriented JavaScript principles.
+Consistent use of Object-Oriented JavaScript principles.
     Object-oriented principles are present in the use of constructors like **Quiz** in **matchmaker.js**.
 
 
