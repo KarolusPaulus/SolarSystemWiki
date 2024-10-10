@@ -11,13 +11,14 @@
         <h1>Solar System Wiki</h1><br>
         <nav>
             <a href="index.html">Home</a> |
-            <a href="vote.html">Vote for Your Favorite Planet</a> |
-            <a href="matchmaker.html">Find Your Perfect Planet Match</a>
+            <a href="vote.html">Vote</a> |
+            <a href="matchmaker.html">Quiz</a>
         </nav>
     </header>
 
     <main class="black-box">
-        <h2 class="h2">Vote For Your Favorite Planet</h2><br>
+        <h2 class="h2">Vote For Your Favorite Planet</h2>
+        <p class="p">So many good options but which one is your all time favorite?</p><br>
     <form id="voteForm">
         <label for="planet">Select Your Favorite Planet:</label>
         <select id="planet" name="planet">
@@ -34,12 +35,13 @@
             <button type="submit" onclick="loadDoc()">Vote</button>
           </div>
           <div id="results" class="fade-in"></div>
+          <div id="chart-container"></div>
 </form><br>
 </main>
 
 <footer>
-    <h3>Check out our sources!</h3>
-        <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">NASA Planetary Fact Sheet</a>
+    <h3 class="h3">Check out our sources!</h3>
+        <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">NASA</a>
         <a href="https://en.wikipedia.org/wiki/Solar_System">Wikipedia</a>
         <a href="https://www.w3schools.com/css/default.asp">CSS Guide</a>
         <a href="https://www.w3schools.com/js/default.asp">JavaScript Guide</a>

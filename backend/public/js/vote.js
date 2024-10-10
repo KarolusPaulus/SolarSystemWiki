@@ -2,12 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const voteForm = document.getElementById('voteForm');
     const resultsDiv = document.getElementById('results');
     const voteMessageDiv = document.getElementById('vote-message');
+    const chartContainer = document.getElementById('chart-container');
 
     function loadDoc() {
         const xhttp = new XMLHttpRequest();
-        /*xhttp.onload = function() {
-            document.getElementById("vote-message").innerHTML = this.responseText;
-        }*/
             xhttp.onload = function() {
                 voteMessageDiv.innerHTML = this.responseText;
                 voteMessageDiv.classList.add('zoom-in');
@@ -38,12 +36,30 @@ document.addEventListener('DOMContentLoaded', () => {
         fetch('/votes')
             .then(response => response.json())
             .then(voteData => {
-                resultsDiv.innerHTML = '';
-
+                const maxVotes = Math.max(...voteData.map(vote => vote.votes), 1);
+                chartContainer.innerHTML = '';
+                
                 voteData.forEach(vote => {
-                    const planetResult = document.createElement('p');
-                    planetResult.textContent = `${vote.planet_name}: ${vote.votes} votes`;
-                    resultsDiv.appendChild(planetResult);
+                    const barWrapper = document.createElement('div');
+                    barWrapper.classList.add('bar-wrapper');
+    
+                    const voteBar = document.createElement('div');
+                    voteBar.classList.add('vote-bar');
+                    voteBar.textContent = vote.planet_name;
+    
+                    const voteCount = document.createElement('span');
+                    voteCount.textContent = `${vote.votes} votes`;
+                    voteCount.classList.add('vote-count');
+    
+                    barWrapper.appendChild(voteBar);
+                    barWrapper.appendChild(voteCount);
+                    chartContainer.appendChild(barWrapper);
+    
+                    setTimeout(() => {
+                        const percentageWidth = (vote.votes / maxVotes) * 100;
+                        voteBar.style.width = `${percentageWidth}%`;
+                        voteBar.classList.add('animated');
+                    }, 100);
                 });
 
                 resultsDiv.classList.add('show');

@@ -11,14 +11,14 @@
         <h1>Solar System Wiki</h1><br>
         <nav>
             <a href="index.html">Home</a> |
-            <a href="vote.html">Vote for Your Favorite Planet</a> |
-            <a href="matchmaker.html">Find Your Perfect Planet Match</a>
+            <a href="vote.html">Vote</a> |
+            <a href="matchmaker.html">Quiz</a>
         </nav>
     </header>
 
     <main class="black-box">
         <h2 class="h2">Find Your Perfect Planet Match</h2>
-        <p class="p">Have you ever wondered which planet would be your perfect romantic match? And no I'm not talking about horoscopes.</p><br>
+        <p class="p">Have you ever wondered which planet would be your perfect romantic match? And no I'm not talking about horoscopes. Let's hope you get your favorite!</p><br>
     <section>
         <form id="quiz">
             <h3>What kind of weather do you prefer?</h3>
@@ -52,7 +52,7 @@
                 <input type="radio" name="drinks" value="liquor">
                 <img src="assets/liquor.jpg" alt="Liquor" title="Liquor">
             </label>
-        </div><br>
+        </div>
         <div class="question">
             <label>
                 <input type="radio" name="drinks" value="wine">
@@ -63,7 +63,7 @@
                 <img src="assets/lights.jpg" alt="Lights" title="Lights">
             </label>
         </div><br>
-            <h3>There's a strom outside. What do you do?</h3>
+            <h3>There's a strom outside. What's your reaction?</h3>
         <div class="question">
             <label>
                 <input type="radio" name="storm" value="angry" required>
@@ -126,7 +126,7 @@
                 <img src="assets/cozy.jpg" alt="Cozy" title="Cozy">
             </label>
         </div><br>
-            <h3>What Kind of Music Do You Prefer?</h3>
+            <h3>What kind of music do you prefer?</h3>
         <div class="question">
             <label>
                 <input type="radio" name="music" value="pop" required>
@@ -147,9 +147,9 @@
                 <img src="assets/electro.jpg" alt="Electro" title="Electro">
             </label>
         </div>
-            <button id="find-match" type="submit">Find My Perfect Match</button>
+            <button id="find-match" type="submit" style="margin-top: 25px;">Find My Perfect Match</button>
         </form>
-
+        
         <p id="match-result" class="show"></p>
         <div class="gif-container">
             <img id="loading-gif" class="loading-gif" src="assets/heart.gif" alt="Matching..." style="display: none;">
@@ -158,8 +158,8 @@
     </main>
 
     <footer>
-        <h3>Check out our sources!</h3>
-        <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">NASA Planetary Fact Sheet</a>
+        <h3 class="h3">Check out our sources!</h3>
+        <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">NASA</a>
         <a href="https://en.wikipedia.org/wiki/Solar_System">Wikipedia</a>
         <a href="https://www.w3schools.com/css/default.asp">CSS Guide</a>
         <a href="https://www.w3schools.com/js/default.asp">JavaScript Guide</a>

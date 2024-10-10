@@ -1,5 +1,4 @@
- 
-    function Quiz(weather, drinks, storm, colors, dates, music) {
+function Quiz(weather, drinks, storm, colors, dates, music) {
 
         this.weather = weather;
         this.drinks = drinks;
@@ -157,10 +156,12 @@ document.getElementById('quiz').addEventListener('submit', function(e) {
             .then(response => response.json())
             .then(data => {
                 const planetMessage = data.bodies.find(body => body.name === bestMatch).message;
+                
                 loadingGif.style.display = 'none';
+                const planetGif = planetGifs[bestMatch];
                 matchResult.innerHTML = `
                 <h3>Your perfect match is ${bestMatch}!</h3>
-                <img src="assets/planet-gif.gif" alt="${bestMatch} GIF" style="display:block; margin: 0 auto;">
+                <img src="${planetGif}" alt="${bestMatch} GIF" style="display:block; margin: 0 auto; width: 200px; height: 200px;">
                 <p>${planetMessage}</p>
                 `;
 

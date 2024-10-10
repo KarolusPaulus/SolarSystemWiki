@@ -34,11 +34,12 @@ header {
 }
 
 h1 {
-    font-family: 'Arial', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
     margin: 0;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
+    line-height: 1.5;
 }
 
 .h2 {
@@ -50,23 +51,32 @@ h1 {
 }
 
 h3 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
     margin: 0;
     letter-spacing: 2px;
     text-align: center;
     padding: 20px 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .p {
     font-size: 20px;
     margin: 0;
-    letter-spacing: 2px;
+    margin-right: 100px;
+    letter-spacing: auto;
     text-align: left;
     padding: 0px 30px;
+    line-height: 1.5;
 }
 
 nav {
-    margin-top: 10px;
+    margin-top: 0px;
     text-align: center;
 }
 
@@ -74,6 +84,7 @@ nav a {
     color: #00b0ff;
     margin: 0 10px;
     text-decoration: none;
+    font-size: 20px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -93,74 +104,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
     color: #ffa550;
-}
-
-/*
-    For mobile (VERY experimental)
-*/
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    header {
-        padding: 15px 10px;
-    }
-
-    .header-container {
-        align-items: center;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    nav a {
-        margin: 0 5px;
-    }
-
-    .black-box {
-        width: 90%;
-        padding: 15px;
-    }
-
-    #planet-info {
-        width: 90%;
-        padding: 15px;
-    }
-
-    #quiz button,
-    #voteForm button {
-        padding: 15px;
-        font-size: 18px;
-    }
-
-    table {
-        width: 100%;
-    }
-
-    th, td {
-        font-size: 14px;
-    }
-
-    .question img {
-        width: 50px;
-        height: auto;
-        border: 2px solid transparent;
-    }
-    
-    .question {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 10px;
-        gap: 10px;
-    }
-
-    .planet {
-        margin: 20px 10px;
-        width: 60px;
-        height: 60px;
-    }
 }
 
 footer {
@@ -186,6 +129,25 @@ main.black-box {
     border-radius: 0;
     color: #fff;
     margin: 0 auto;
+}
+
+button {
+    background-color: #00b0ff;
+    border: none;
+    color: #fff;
+    padding: 7px 15px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.5;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ffa550;
 }
 
 /*
@@ -271,7 +233,7 @@ main.black-box {
     border: 3px solid #00b0ff;
     padding: 20px 30px;
     position: fixed;
-    top: 20%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
@@ -329,9 +291,10 @@ h2 #planet-name {
 
 #planet-info p {
     margin-bottom: 15px;
+    line-height: 1.5;
 }
 
-button, .info-button {
+.info-button {
     background-color: #00b0ff;
     border: none;
     color: #fff;
@@ -343,10 +306,10 @@ button, .info-button {
     line-height: 1.5;
     border-radius: 3px;
     margin-right: 10px;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
-button:hover, .info-button:hover {
+.info-button:hover {
     background-color: #ffa550;
 }
 
@@ -357,8 +320,8 @@ button:hover, .info-button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 .loading-gif {
@@ -370,7 +333,7 @@ button:hover, .info-button:hover {
 .question {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 4px;
     gap: 20px;
 }
 
@@ -379,6 +342,9 @@ button:hover, .info-button:hover {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 10px;
+    display: inline-block;
+    color: #00b0ff;
 }
 
 .question img {
@@ -395,60 +361,62 @@ button:hover, .info-button:hover {
     border-color: #00b0ff;
 }
 
-/*
-#quiz button {
-    background-color: #00b0ff;
-    border: none;
-    color: white;
-    padding: 10px 20px;
+#match-result {
+    max-height: 0;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px auto;
     text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    transition: max-height 1s ease-out, padding 1s ease-out;
 }
-*/
+
+#match-result.show {
+    max-height: 1000px;
+    padding: 20px;
+}
 
 /*
     Planets.html (Planetary facts sheet)
 */
 table {
     width: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
     border-collapse: collapse;
     background-color: #000;
-    color: #0080cc;
+    color: #00b0ff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
+    border: hidden;
     overflow: hidden;
 }
 
-th, td {
+td {
+    margin-top: 5px;
     padding: 15px;
-    border: 2px solid #0080cc;
-    text-align: left;
-}
-
-th {
-    color: #000;
-    background: #0080cc;
-    text-transform: uppercase;
+    border: 2px solid #0071b3;
+    text-align: center;
 }
 
 td:first-child {
     font-weight: bold;
     color: #00b0ff;
+    text-align: left;
 }
 
 /*
     Vote.html
 */
+
 select {
     background-color: #000;
     color: #fff;
     border: 2px solid #00b0ff;
     padding: 10px;
     width: 200px;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 5px;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -458,7 +426,7 @@ select {
 
 select:focus {
     outline: none;
-    border-color: #0080cc;
+    border-color: #0071b3;
 }
 
 option {
@@ -466,36 +434,12 @@ option {
     color: #fff;
     padding: 10px;
     border: none;
-    font-size: 16px;
+    font-size: 15px;
 }
 
-/*
-#voteForm button {
-    background-color: #00b0ff;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-#voteForm button:hover {
-    background-color: #0080cc;
-}
-*/
-
-form label {
-    font-size: 18px;
-    margin-bottom: 10px;
-    display: inline-block;
-    color: #00b0ff;
-}
-
-#vote-message {
-    margin: 20px 0;
-    text-align: center;
+#voteForm {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #results {
@@ -505,51 +449,83 @@ form label {
     border-radius: 5px;
     width: 80%;
     margin: 10px auto;
-    padding: 0 20px;
+    padding: 0 10px;
     text-align: center;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.5;
     transition: max-height 1s ease-out, padding 1s ease-out;
 }
 
 #results.show {
     max-height: 1000px;
-    padding: 20px;
+    padding: 10px;
+    opacity: 1;
 }
 
 #vote-message {
-    color: #00b0ff;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: inline-block;
-    transition: transform 0.6s ease, opacity 0.6s ease;
-    
-}
-
-#match-result {
-    max-height: 0;
-    overflow: hidden;
-    color: #fff;
-    border-radius: 5px;
-    width: 80%;
-    margin: 10px auto;
-    padding: 0 20px;
+    margin-top: 30px;
+    margin-bottom: 0px;
     text-align: center;
-    font-size: 18px;
-    line-height: 1.6;
-    transition: max-height 1s ease-out, padding 1s ease-out;
-}
-
-#match-result.show {
-    max-height: 1000px;
-    padding: 20px;
+    color: #00b0ff;
+    font-size: 28px;
+    font-weight: bold;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
 #vote-message.zoom-in {
     opacity: 1;
     transform: scale(1.2);
     animation: zoom-in 0.6s forwards;
+}
+
+#chart-container {
+    width: 50%;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.bar-wrapper {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.vote-bar {
+    background-color: #00b0ff;
+    transition: width 1s ease-in-out;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 10px 15px;
+    width: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.vote-bar.animated {
+    opacity: 1;
+    transition: width 1s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.vote-count {
+    margin-left: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bar-wrapper span {
+    font-size: 15px;
+    color: #fff;
+    min-width: 0;
 }
 
 @keyframes zoom-in {
@@ -560,5 +536,120 @@ form label {
     to {
         transform: scale(1.2);
         opacity: 1;
+    }
+}
+
+/*
+    For mobile (VERY experimental)
+*/
+@media (max-width: 480px) {
+    header {
+        padding: 10px 5px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .h2, h3 {
+        font-size: 22px;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .p, h3 {
+        margin: 0 20px;
+        padding: 0px 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    button, .info-button {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    #space {
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .planet {
+        margin: 20px 10px;
+    }
+
+    #planet-info {
+        padding: 15px 20px;
+    }
+
+    #planet-info h2 {
+        font-size: 18px;
+    }
+
+    #planet-info p {
+        font-size: 14px;
+    }
+
+    select, option {
+        font-size: 14px;
+        padding: 8px;
+        width: 180px;
+    }
+
+    #vote-message {
+        font-size: 20px;
+    }
+
+    #chart-container {
+        width: 80%;
+    }
+
+    .vote-bar {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .bar-wrapper span {
+        font-size: 12px;
+    }
+
+    .gif-container {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .loading-gif {
+        width: 70px;
+    }
+
+    .question {
+        gap: 11px;
+    }
+
+    .question img {
+        height: auto;
+        width: 130px;
+    }
+
+    .question label {
+        margin-bottom: 2px;
+    }
+
+    main.black-box {
+        padding: 0px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
     }
 }
