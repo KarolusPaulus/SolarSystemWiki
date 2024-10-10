@@ -16,12 +16,10 @@ Use of forms, links, and media.
     **All HTML documents** have a header and a footer. The header has links to
     other pages on the site while the footer has external links to sources used
     for the making of the site and the information displayed on it.
-
     The match maker quiz in matchmaker.html uses form to structure the questions
     and answers. The anwers are all in image form and are displayed in place of text.
     After the user has filled out the form and pressed the submit button, a loading gif
     plays as the results are calculated.
-
     The home page, index.html, uses still images as buttons and the background.
 
 4/5:
