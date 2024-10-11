@@ -137,6 +137,9 @@ document.getElementById('quiz').addEventListener('submit', function(e) {
         document.querySelector('input[name="music"]:checked').value
     );
 
+    const audio = document.getElementById('sound');
+    audio.play();
+
     const submitButton = document.getElementById('find-match');
     submitButton.style.display = 'none';
 
@@ -173,5 +176,5 @@ document.getElementById('quiz').addEventListener('submit', function(e) {
                 matchResult.textContent = 'Error fetching match message.';
                 alert('Oops! There was an error fetching your perfect match D:');
             });
-    }, 3000);
+    }, 6200);
 });
