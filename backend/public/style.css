@@ -540,7 +540,22 @@ option {
 }
 
 /*
-    For mobile (VERY experimental)
+    Home page (index.html) for a bigger screen
+*/
+@media (min-width: 1540px) {
+    #space {
+        justify-content: center;
+        padding: 100px 50px 50px;
+    }
+
+    .planet {
+        transform: scale(1.1);
+        padding: 10px 10px;
+    }
+}
+
+/*
+    For mobile (planet layout on home page doesn't work)
 */
 @media (max-width: 480px) {
     header {
