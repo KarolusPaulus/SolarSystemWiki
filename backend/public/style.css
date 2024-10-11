@@ -592,13 +592,13 @@ option {
     }
 
     button {
-        font-size: 16px;
-        padding: 5px 10px;
+        font-size: 20px;
+        padding: 10px 15px;
     }
 
     .info-button {
-        font-size: 20px;
-        padding: 10px 15px;
+        font-size: 16px;
+        padding: 5px 10px;
     }
 
     #space {
