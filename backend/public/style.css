@@ -548,32 +548,32 @@ option {
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 30px;
     }
 
     .h2, h3 {
-        font-size: 20px;
+        font-size: 25px;
         padding: 10px 20px;
         text-align: center;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .p {
         margin: 0 10px;
         padding: 0px 7px;
-        font-size: 13px;
+        font-size: 14px;
         text-align: center;
     }
 
     nav a {
         margin: 0 5px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     footer {
         padding: 20px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     button, .info-button {
@@ -605,7 +605,7 @@ option {
     }
 
     #planet-info p {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     select, option {
@@ -615,7 +615,7 @@ option {
     }
 
     #vote-message {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     #chart-container {
@@ -623,12 +623,12 @@ option {
     }
 
     .vote-bar {
-        font-size: 12px;
+        font-size: 14px;
         padding: 8px;
     }
 
     .bar-wrapper span {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .gif-container {
@@ -646,7 +646,7 @@ option {
 
     .question img {
         height: auto;
-        width: 130px;
+        width: 150px;
     }
 
     .question label {
@@ -661,6 +661,6 @@ option {
     }
 
     #match-result {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
