@@ -81,12 +81,15 @@ function Quiz(weather, drinks, storm, colors, dates, music) {
             planetScores.Venus += 20;
             planetScores.Jupiter += 15;
             planetScores.Earth += 10;
+            planetScores.Neptune += 10;
         } else if (this.dates === 'art') {
             planetScores.Jupiter += 20;
             planetScores.Mars += 15;
             planetScores.Saturn += 10;
+            planetScores.Uranus += 10;
         } else if (this.dates === 'outdoors') {
             planetScores.Saturn += 20;
+            planetScores.Jupiter += 15;
         } else if (this.dates === 'cozy') {
             planetScores.Neptune += 20;
             planetScores.Uranus += 15;

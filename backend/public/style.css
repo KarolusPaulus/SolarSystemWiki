@@ -548,7 +548,7 @@ option {
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .h2, h3 {
@@ -568,7 +568,7 @@ option {
 
     nav a {
         margin: 0 5px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     footer {
@@ -576,9 +576,14 @@ option {
         font-size: 16px;
     }
 
-    button, .info-button {
-        font-size: 20px;
+    button {
+        font-size: 16px;
         padding: 5px 10px;
+    }
+
+    .info-button {
+        font-size: 20px;
+        padding: 10px 15px;
     }
 
     #space {
@@ -608,16 +613,12 @@ option {
         font-size: 14px;
     }
 
-    #voteForm {
-        line-height: 1.5;
-    }
-
     select, option {
-        font-size: 20px;
+        font-size: 16px;
         padding: 8px;
         width: 200px;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
     }
 
     #vote-message {
