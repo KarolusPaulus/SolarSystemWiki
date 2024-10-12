@@ -20,7 +20,7 @@ body {
 
 header {
     background-color: #000;
-    color: #ffffff;
+    color: #fff;
     padding: 20px 15px;
     position: relative;
     text-align: center;
@@ -401,7 +401,6 @@ td {
 }
 
 td:first-child {
-    font-weight: bold;
     color: #00b0ff;
     text-align: left;
 }
@@ -603,7 +602,6 @@ option {
 
     #space {
         padding: 20px;
-        flex-wrap: wrap;
         justify-content: center;
     }
 

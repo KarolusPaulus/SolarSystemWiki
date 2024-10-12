@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(() => {
             loadDoc();
         })
-        .catch(error => console.error(error));
+        .catch(error => console.error("Failed to submit your vote", error));
     });
 
     function fetchResults() {
@@ -64,6 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 resultsDiv.classList.add('show');
             })
-            .catch(error => console.error(error));
+            .catch(error => console.error("Failed to fetch votes", error));
     }
 });

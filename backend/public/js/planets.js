@@ -49,8 +49,7 @@ fetch('/planet-info.json')
 const closeButton = document.getElementById('close-info');
 closeButton.addEventListener('click', () => {
     const planetInfoContainer = document.getElementById('planet-info');
-
-    planetInfoContainer.classList.remove('show');
+    
     planetInfoContainer.style.animation = 'fadeOut 0.5s ease forwards';
 
     setTimeout(() => {

@@ -128,8 +128,8 @@ const planetGifs = {
     Neptune: 'assets/neptune.gif'
 };
 
-document.getElementById('quiz').addEventListener('submit', function(e) {
-    e.preventDefault();
+document.getElementById('quiz').addEventListener('submit', function(event) {
+    event.preventDefault();
 
     const quiz = new Quiz(
         document.querySelector('input[name="weather"]:checked').value,
