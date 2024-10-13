@@ -137,7 +137,6 @@ button {
     color: #fff;
     padding: 7px 15px;
     cursor: pointer;
-    display: inline-block;
     text-decoration: none;
     font-size: 18px;
     line-height: 1.5;
@@ -179,6 +178,7 @@ button:hover {
 
 .planet:hover {
     transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
 .planet {
@@ -279,10 +279,6 @@ h2 #planet-name {
         opacity: 0;
         transform: translate(-50%, -60%);
     }
-}
-
-#planet-info.show {
-    animation: fadeIn 0.5s ease forwards;
 }
 
 #planet-info h2 {
@@ -408,7 +404,6 @@ td:first-child {
 /*
     Vote.html
 */
-
 select {
     background-color: #000;
     color: #fff;
