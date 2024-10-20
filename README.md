@@ -163,9 +163,9 @@ Asynchronous data displays quiz results and dynamically updates the voting bar c
 **File: js/vote.js Line of Code:** 10-12, 19, 20, 27, 30, 43-56, 59-61, 65<br>
 **File: js/matchmaker.js Line of Code:** 153, 154, 164-171, 178-180<br>
 
-![home page](assets/ssw1.png)
-![home page two](assets/ssw2.png)
-![table](assets/ssw3.png)
-![vote](assets/ssw4.png)
-![quiz](assets/ssw5.png)
-![quiz 2](assets/ssw6.png)
+![home page](backend/public/assets/ssw1.png)
+![home page two](backend/public/assets/ssw2.png)
+![table](backend/public/assets/ssw3.png)
+![vote](backend/public/assets/ssw4.png)
+![quiz](backend/public/assets/ssw5.png)
+![quiz 2](backend/public/assets/ssw6.png)
