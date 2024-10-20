@@ -1,5 +1,6 @@
 # SolarSystemWiki
 **Link to website:** https://solarsystemwiki.onrender.com/ 
+**The site might take a couple of minutes to load!**
 
 ## HTML
 ### 1/5: Basic HTML structure is present.
@@ -161,3 +162,10 @@ Asynchronous data displays quiz results and dynamically updates the voting bar c
 **File: js/planets.js Line of Code:** 4, 6, 9-43, 15, 27, 36, 39, 46, 53, 56, 57<br>
 **File: js/vote.js Line of Code:** 10-12, 19, 20, 27, 30, 43-56, 59-61, 65<br>
 **File: js/matchmaker.js Line of Code:** 153, 154, 164-171, 178-180<br>
+
+![home page](assets/ssw1.png)
+![home page two](assets/ssw2.png)
+![table](assets/ssw3.png)
+![vote](assets/ssw4.png)
+![quiz](assets/ssw5.png)
+![quiz 2](assets/ssw6.png)
